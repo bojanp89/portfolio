@@ -1,0 +1,79 @@
+header {
+   background: linear-gradient(to bottom, $primary-transparent, $primary-transparent), url(../assets/ball-court-b&w.jpg) center no-repeat;
+   background-size: cover;
+   height: 100vh;
+   color: $secondary-color;
+   font-family: $accent-font;
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      // border: 1px solid red;
+      justify-content: space-between;
+      // height: 100vh;
+   }
+   .hero-text {
+      // margin-top: 26vh;
+      // border: 1px solid red;
+      height: calc(100vh - 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   h1 {
+      text-transform: uppercase;
+      color: $accent-color;
+      font-size: 6.5vw;
+      line-height: 1rem;
+      margin-top: 0;
+      margin-bottom: 2%;
+      margin-left: -0.25%;
+      // -webkit-text-stroke: 1px rgba(50, 50, 50, 1);
+      font-weight: 800;
+   }
+   h2 {
+      margin-top: 0px;
+      font-size: 3vw;
+      // -webkit-text-stroke: 1px rgba(50, 50, 50, 1);
+      font-weight: 700;
+   }
+   p {
+      margin-top: 0;
+      text-transform: uppercase;
+      // padding-bottom: 200px;
+      padding-top: 2%;
+   }
+   span.bo {
+      color: $accent-color;
+   }
+   // nav {
+   //    position: fixed;
+   //    display: none;
+   //    padding-right: 7.5%;
+   //    right: 0;
+   //    top: 0;
+   //    background: $secondary-color;
+   //    height: 100%;
+   // }
+   // ul {
+   //    list-style-type: none;
+   //    text-align: right;
+   //    text-transform: uppercase;
+   // }
+   // ul.navigation {
+   //    display: flex;
+   //    flex-direction: column;
+   //    justify-content: space-between;
+   //    height: 25%;
+   // }
+   // ul.social-media-icons {
+   //    display: flex;
+   //    justify-content: space-between;
+   // }
+   // li:focus {
+   //    border: 1px solid red;
+   // }
+   // a {
+   //    text-decoration: none;
+   //    color: $primary-color;
+   // }
+}
