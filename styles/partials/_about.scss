@@ -1,0 +1,43 @@
+section.about {
+   padding: 8% 0;
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // border: 1px solid red;
+   }
+   .headshot {
+      flex-grow: 2;
+      flex-shrink: 0;
+      max-width: 30%;
+      min-width: 200px;
+      // box-shadow: 30px 0px 0px -20px $primary-transparent;
+      box-shadow: 55px 0px 0px -35px #888c97;
+   }
+   img {
+      // box-shadow: 81px 0px 0px -50px lightgray;
+      box-shadow: 30px 0px 0px -20px rgba(55, 63, 82, 0.8);
+      max-width: 100%;
+   }
+   .about-content {
+      max-width: 40%;
+      flex-grow: 1;
+      flex-shrink: 2;
+      padding-right: 5%;
+      padding-left: 2%;
+      border-right: 2px solid lightgray;
+   }
+   h2 {
+      max-width: 20%;
+      flex-grow: 1;
+      flex-shrink: 2;
+      text-align: center;
+      font-weight: 400;
+   }
+   p {
+      font-size: 0.8rem;
+      letter-spacing: 0.03rem;
+      line-height: 1.1rem;
+      // letter-spacing: 1px;
+   }
+}

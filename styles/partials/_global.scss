@@ -3,7 +3,7 @@ html {
 }
 
 .wrapper {
-   width: 85%;
+   width: 75%;
    max-width: 1600px;
    margin: 0 auto;
    // position: relative;
@@ -14,6 +14,34 @@ img {
    max-width: 100%;
    display: block;
 }
-body {
+
+section p {
+   font-family: $primary-font;
+   line-height: 1.6;
+   font-size: 0.8rem;
+   font-weight: 400;
+}
+p {
+   letter-spacing: 0.03rem;
+}
+h1, h2 {
+   font-family: $accent-font;
+}
+h2 {
+   font-weight: 400;
+   font-size: 2rem;
+}
+h2.section-header::after {
+   content: '';
+   background-color: $accent-color;
+   width: 50px;
+   height: 2px;
+   display: block;
+   margin: 0 auto;
    position: relative;
+}
+
+section a {
+   transition: $link-transition;
+   font-size: 0.8rem;
 }

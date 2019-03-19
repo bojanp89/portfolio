@@ -9,58 +9,194 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link href="dist/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="styles/style.css">
-	<title>Bo Knows Code</title>
+	<title>BOKNOWSCODE</title>
 </head>
 
 <body>
 	<header>
 		<div class="wrapper">
-			<p><span class="bo">Bo</span>KnowsCode</p>
-			<div class="nav-toggle">
-				<div class="nav-toggle-bar"></div>
-			</div>
-			<nav class="nav" tabindex="0">
-				<ul tabindex="0">
-					<li tabindex="0"><a href="www.google.com" role="button" tabindex="0">Home</a></li>
-					<li tabindex="0"><a href="#">About Me</a></li>
-					<li tabindex="0"><a href="#">Portfolio</a></li>
-					<li tabindex="0"><a href="#">Contact</a></li>
-				<!-- </ul>
-				<ul> -->
-					<li><a href="https://ca.linkedin.com/in/bojanpecanac"><i class="fab fa-linkedin-in"></i></a></li>
-					<li><a href="https://github.com/bojanp89"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://twitter.com/pecanacbojan"><i class="fab fa-twitter"></i></a></li>
+			<!-- <p><span class="bo">Bo</span>KnowsCode</p> -->
+
+			<button class="hamburger hamburger--minus animated fadeIn slower delay-1s" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav class="nav show" tabindex="0">
+				<ul tabindex="0" class="navigation">
+					<li tabindex="0"><a href="#" role="button" tabindex="0">Home</a></li>
+					<li tabindex="0"><a href="#about">About Me</a></li>
+					<li tabindex="0"><a href="#portfolio">Portfolio</a></li>
+					<li tabindex="0"><a href="#skills">Skills</a></li>
+					<li tabindex="0"><a href="#contact">Contact</a></li>
+				</ul>
+				<ul class="social-media-icons">
+					<li tabindex="0"><a href="https://ca.linkedin.com/in/bojanpecanac" target=“_blank”><i
+								class="fab fa-linkedin-in"></i></a>
+					</li>
+					<li tabindex="0"><a href="https://github.com/bojanp89" target=“_blank”><i class="fab fa-github"></i></a>
+					</li>
+					<li tabindex="0"><a href="https://twitter.com/pecanacbojan" target=“_blank”><i
+								class="fab fa-twitter"></i></a></li>
 				</ul>
 			</nav>
-			<div class="hero-text">
+			<div class="hero-text animated fadeIn slower delay-1s">
 				<h1>Bojan <span class="last-name">Pećanac</span></h1>
-				<h2>Front-End Web Developer</h2>
+				<h2 class>Front-End Web Developer</h2>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section class="about">
-			<div class='headshot'>
-				<!-- <img src="assets/HYheadshot2.jpg" alt="bojan pećanac headshot"> -->
+		<section class="about" id="about">
+			<div class="wrapper">
+				<div class='headshot'>
+					<img src="assets/HYheadshot2.jpg" alt="bojan pećanac headshot">
+				</div>
+				<div class="about-content">
+					<p>I am a Toronto-based front end web developer who recently graduated from HackerYou College of
+						Technology. As a creative individual, I discovered a love for building clean websites and great
+						online experiences.</p>
+					<p>Prior to this, I was a personal trainer for 2 years, and electrician for 6 years. These careers
+						have helped me enhance my interpersonal skills and solve challenging problems.</p>
+					<p>I am also a basketball junkie. When I'm not coding, you'll most likely find me in a game or watching
+						one.</p>
+				</div>
+				<h2 class="section-header">About me</h2>
 			</div>
-			<div class="about-content">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, veritatis dolorum. Optio fuga nostrum
-					laudantium unde praesentium, consequuntur adipisci rerum totam quae corporis necessitatibus natus
-					doloremque non sed? Veniam, aperiam?</p>
-				<button>Read more</button>
+		</section>
+		<section class="portfolio">
+			<div class="wrapper">
+				<h2 class="section-header" id="portfolio">Portfolio</h2>
+				<!-- <p>I am always creating and improving. Check out some recent projects.</p> -->
+				<div class="main-carousel">
+					<div class="carousel-cell">
+						<div class="project-info">
+							<h3>Bar-One</h3>
+							<p>PSD conversion of a multi-page website that is optimized for desktop, tablet, and mobile.</p>
+							<div class="project-links-skills">
+								<div class="project-links">
+									<a href="http://www.boknowscode.com/bar-one" target=“_blank”>Live</a>
+									<a href="https://github.com/bojanp89/bojan-pecanac-project3" target=“_blank”>GitHub</a>
+								</div>
+								<div class='skills-used'>
+									<p>HTML5</p>
+									<p>SCSS</p>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="assets/screenshot-1.jpg" class="image" alt="screenshot of a psd-conversion">
+						</div>
+					</div>
+					<div class="carousel-cell">
+						<div class="project-info">
+							<h3>Hey, Watch it!</h3>
+							<p>An app that suggests a movie based on the user's choice of genre, release date and rating.
+								Created with pair programming.</p>
+							<div class="project-links-skills">
+								<div class="project-links">
+									<a href="http://www.boknowscode.com/hey-watch-it" target=“_blank”>Live</a>
+									<a href="https://github.com/agencybojames/project04" target=“_blank”>GitHub</a>
+								</div>
+								<div class='skills-used'>
+									<p>HTML5</p>
+									<p>SCSS</p>
+									<p>JavaScript</p>
+									<p>jQuery</p>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="assets/screenshot-3.jpg" class="image" alt="">
+						</div>
+					</div>
+					<div class="carousel-cell">
+						<div class="project-info">
+							<h3>Parent Joke</h3>
+							<p>An app that generates a daily joke, allows users to submit their own jokes and vote on previous
+								jokes. Group project created with pair programming.</p>
+							<div class="project-links-skills">
+								<div class="project-links">
+									<a href="https://parent-joke.firebaseapp.com/" target=“_blank”>Live</a>
+									<a href="https://github.com/shabora/parent-joke-project-6.git" target=“_blank”>GitHub</a>
+								</div>
+								<div class='skills-used'>
+									<p>HTML5</p>
+									<p>SCSS</p>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="assets/screenshot-4.jpg" class="image" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
-			<h2>About me</h2>
 		</section>
-		<section class="work">
-			<h2>Some of my work!</h2>
-			<p>I am always creating and improving. Check out some recent projects.</p>
-			<p>PROJECTS GO HERE</p>
+		<section class="skills" id="skills">
+			<div class="wrapper">
+				<div class="skills-text">
+					<h2 class="section-header">Skills</h2>
+					<p>I have built projects using these tools</p>
+				</div>
+				<ul>
+					<li><img src="assets/icomoon/SVG/html5.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/css3.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/sass.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/javascript.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/jquery.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/react.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/firebase.svg" alt=""></li>
+					<li><img src="assets/icomoon/SVG/github.svg" alt=""></li>
+				</ul>
 		</section>
-		<section class="skills">
+		<section class="contact">
+			<div class="wrapper">
+				<h2 class="section-header" id="contact">Contact</h2>
+				<p>Email me at <a href="mailto:bojan@boknowscode.com">bojan@boknowscode.com</a> or fill out the form below.
+				</p>
+				<form action="submit">
+					<div class="input-group">
+						<label for="name" class="visuallyhidden">Name</label>
+						<input type="text" id="name" placeholder="Name" required="true">
 
+						<label for="email" class="visuallyhidden">Email</label>
+						<input type="email" id="email" placeholder="Email" required="true">
+						<!-- <label for="">Email:</label> -->
+					</div>
+
+					<textarea name="" id="" cols="20" rows="8" placeholder="Message"></textarea>
+
+
+					<input type="submit" value="Send">
+				</form>
+			</div>
 		</section>
 	</main>
+	<footer>
+		<div class="wrapper">
+			<p>Bojan Pećanac &copy; 2019</p>
+			<ul>
+				<li tabindex="0"><a href="https://ca.linkedin.com/in/bojanpecanac" target=“_blank”><i
+							class="fab fa-linkedin-in"></i></a>
+				</li>
+				<li tabindex="0"><a href="https://github.com/bojanp89" target=“_blank”><i class="fab fa-github"></i></a>
+				</li>
+				<li tabindex="0"><a href="https://twitter.com/pecanacbojan" target=“_blank”><i
+							class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'
+		integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+	<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="scripts/script.js"></script>
 </body>
 

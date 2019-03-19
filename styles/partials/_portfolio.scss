@@ -1,0 +1,117 @@
+section.portfolio {
+   padding: 8% 0;
+   background: $primary-color;
+   color: $secondary-color;
+   h2 {
+      text-align: center;
+      margin-top: 0;
+   }
+   p {
+      margin-top: 0;
+      text-align: center;
+      letter-spacing: 1px;
+   }
+   .main-carousel {
+      width: 70%;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 5%;
+   }
+   .carousel-cell {
+      width: 100%;
+   }
+   .container {
+      margin: 0 auto;
+      margin-top: 10px;
+      position: relative;
+   }
+   .container:hover .overlay {
+      opacity: 1;
+   }
+   .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      background: $primary-transparent;
+   }
+   .project-info {
+      margin: 0 auto;
+      h3 {
+         text-align: left;
+         font-weight: 300;
+         font-size: 1rem;
+         text-transform: uppercase;
+         margin-bottom: 0;
+         color: $accent-color;
+      }
+      p {
+         text-align: left;
+         line-height: 1rem;
+         padding: 5px 0;
+
+      }
+   }
+   .project-links-skills {
+      display: flex;
+      justify-content: space-between;
+   }
+   .project-links, .skills-used {
+      display: flex;
+      // border: 2px solid blue;
+   }
+   .project-links {
+      a {
+         border: 1px solid $accent-color;
+         width: 100px;
+         text-decoration: none;
+         color: $accent-color;
+         font-family: $primary-font;
+         margin-right: 10px;
+         font-size: 0.8rem;
+         // text-transform: uppercase;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         &:hover, &:focus {
+            background: $accent-color;
+            color: $body-font-color;
+         }
+      }
+   }
+   .skills-used {
+      p {
+         border: 1px solid $secondary-color;
+         text-align: center;
+         width: 100px;
+         margin-bottom: 0;
+         margin-left: 10px;
+         // text-transform: uppercase;
+      }
+   }
+   .flickity-button {
+      transform: translateY(45px);
+      background: none;
+      color: $accent-color;
+      transition: all 0.1s linear;
+      &:hover {
+         color: darken($accent-color, 10%);
+      }
+   }
+   .previous {
+      left: -60px;
+   }
+   .next {
+      right: -60px;
+   }
+   .dot {
+      background: $accent-color;
+      transition: all 0.1s linear;
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
+
+}
