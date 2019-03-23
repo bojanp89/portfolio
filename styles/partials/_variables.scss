@@ -11,3 +11,20 @@ $accent-font: 'Montserrat', sans-serif;
 
 $link-transition: all 0.2s ease-in-out;
 
+@mixin breakpoint-1115px {
+   @media (max-width: 1115px) {
+      @content;
+   }
+}
+
+@mixin breakpoint-900px {
+   @media (max-width: 900px) {
+      @content;
+   }
+}
+
+@mixin breakpoint-550px {
+   @media (max-width: 550px) {
+      @content;
+   }
+}

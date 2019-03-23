@@ -1,5 +1,5 @@
 section.portfolio {
-   padding: 8% 0;
+   padding: 8% 0 12%;
    background: $primary-color;
    color: $secondary-color;
    h2 {
@@ -19,10 +19,11 @@ section.portfolio {
    }
    .carousel-cell {
       width: 100%;
+      // border: 1px solid red;
    }
    .container {
       margin: 0 auto;
-      margin-top: 10px;
+      margin-bottom: 20px;
       position: relative;
    }
    .container:hover .overlay {
@@ -43,13 +44,14 @@ section.portfolio {
          text-align: left;
          font-weight: 300;
          font-size: 1rem;
-         text-transform: uppercase;
+         // text-transform: uppercase;
          margin-bottom: 0;
          color: $accent-color;
+         font-weight: 500;
       }
       p {
          text-align: left;
-         line-height: 1rem;
+         line-height: 0.9rem;
          padding: 5px 0;
 
       }
@@ -61,38 +63,53 @@ section.portfolio {
    .project-links, .skills-used {
       display: flex;
       // border: 2px solid blue;
+      @include breakpoint-1115px {
+         flex-direction: column;
+      }
+      
    }
    .project-links {
       a {
          border: 1px solid $accent-color;
          width: 100px;
          text-decoration: none;
-         color: $accent-color;
+         color: $body-font-color;
          font-family: $primary-font;
          margin-right: 10px;
          font-size: 0.8rem;
+         background: $accent-color;
          // text-transform: uppercase;
          display: flex;
          justify-content: center;
          align-items: center;
+         @include breakpoint-1115px {
+            flex-direction: column;
+            margin-bottom: 5px;
+         }
          &:hover, &:focus {
-            background: $accent-color;
-            color: $body-font-color;
+            background: none;
+            color: $accent-color;
+            border: 1px solid $accent-color;
          }
       }
    }
    .skills-used {
       p {
-         border: 1px solid $secondary-color;
+         border: 0.5px solid $secondary-color;
          text-align: center;
          width: 100px;
          margin-bottom: 0;
          margin-left: 10px;
+         @include breakpoint-1115px {
+            margin-bottom: 5px;
+            line-height: 1.05rem;
+            // font-size: 0.7rem;
+         }
          // text-transform: uppercase;
       }
    }
    .flickity-button {
-      transform: translateY(45px);
+      // transform: translateY(10px);
       background: none;
       color: $accent-color;
       transition: all 0.1s linear;

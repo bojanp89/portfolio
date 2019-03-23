@@ -17,7 +17,7 @@ header {
       z-index: 20;
    }
    .hamburger-inner {
-      box-shadow: 2px 2px 5px -1px rgba(0,0,0,1);
+      // box-shadow: 2px 2px 5px -1px rgba(0,0,0,1);
    }
    .hero-text {
       height: calc(100vh);
@@ -35,6 +35,9 @@ header {
       margin-bottom: 0;
       margin-left: -0.25%;
       font-weight: 700;
+      @include breakpoint-900px {
+         font-size: 9vw;
+      }
    }
    h2 {
       margin-top: 0px;
@@ -43,6 +46,9 @@ header {
       animation-duration: 3s;
       animation-delay: 2s;
       animation-iteration-count: infinite;
+      @include breakpoint-900px {
+         font-size: 5vw;
+      }
    }
    p {
       margin-top: 0;
@@ -61,7 +67,7 @@ header {
       animation: fadeInRight 0.7s linear;
       position: fixed;
       // display: none;
-      padding-right: 5%;
+      padding-right: 7.5%;
       right: 0;
       top: 0;
       background: $secondary-transparent;
@@ -70,22 +76,37 @@ header {
       flex-direction: column;
       justify-content: center;
       z-index: 10;
+      @include breakpoint-550px {
+         width: 100%;
+         align-items: center;
+         background: $secondary-color;
+      }
    }
    ul {
       list-style-type: none;
       text-align: right;
       text-transform: uppercase;
       // border: 1px solid red;
+      @include breakpoint-550px {
+         text-align: center;
+      }
    }
    ul.navigation {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 25%;
+      @include breakpoint-550px {
+         height: 40%;
+      }
    }
    ul.social-media-icons {
       display: flex;
       justify-content: space-between;
+      @include breakpoint-550px {
+         justify-content: space-between;
+         width: 200px;
+      }
       li {
          transition: $link-transition;
          &:hover, &:focus {
